@@ -17,6 +17,7 @@ namespace ProductCrubMS.Controllers
             _repository = repository;
         }
 
+
         [HttpGet]
         public async Task<IEnumerable<Product>> GetProducts() => await _repository.GetProducts();
 
